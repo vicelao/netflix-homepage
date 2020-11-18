@@ -1,0 +1,122 @@
+/* environment variables  */
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* the elements of the box, do not exceed its size  */
+}
+
+/*base elements*/
+body {
+  background: var(--preta);
+  font-family: 'Source Sans Pro', Arial, sans-serif; /*'Times New Roman', Times, serif;*/
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: Arial Black, times;
+  font-size: 40px;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: red;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*main film*/
+
+.principal-film {
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/capa-jedi.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.principal-film .desc {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.principal-film .tittle {
+  margin-top: 15%;
+  font-size: 2.2rem; /*40px*/
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.text {
+  max-width: 80%;
+  text-justify: auto;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 40px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  margin-top: 5px;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.principal-film .container {
+  width: 60%;
+}
+
+.box-film {
+  height: 500%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-films {
+  margin-top: 5px;
+}

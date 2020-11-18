@@ -1,0 +1,60 @@
+/* environment variables  */
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* the elements of the box, do not exceed its size  */
+}
+
+/*base elements*/
+body {
+  background: var(--preta);
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: Arial Black, times;
+  font-size: 40px;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: red;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+body main {
+  height: 600px;
+  background-size: cover;
+}
+
+.carousel-films {
+  margin-top: 5px;
+}
